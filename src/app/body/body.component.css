@@ -15,7 +15,96 @@
 .body_buttons {
   flex: 2 1 auto;
   padding: 10px;
-  display: grid;
-
   background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "ce ce c c"
+    "x2 sqrt div mult"
+    "seven eight nine min"
+    "four five six plus"
+    "one two three result"
+    "zeroNum comma comma result";
+}
+
+.body_buttons-1 {
+  grid-area: ce;
+}
+
+.body_buttons-2 {
+  grid-area: c;
+}
+
+.body_buttons-3 {
+  grid-area: x2;
+}
+
+.body_buttons-4 {
+  grid-area: sqrt;
+}
+
+.body_buttons-5 {
+  grid-area: div;
+}
+
+.body_buttons-6 {
+  grid-area: mult;
+}
+
+.body_buttons-7 {
+  grid-area: seven;
+}
+
+.body_buttons-8 {
+  grid-area: eight;
+}
+
+.body_buttons-9 {
+  grid-area: nine;
+}
+
+.body_buttons-10 {
+  grid-area: min;
+}
+
+.body_buttons-11 {
+  grid-area: four;
+}
+
+.body_buttons-12 {
+  grid-area: five;
+}
+
+.body_buttons-13 {
+  grid-area: six;
+}
+
+.body_buttons-14 {
+  grid-area: plus;
+}
+
+.body_buttons-15 {
+  grid-area: one;
+}
+
+.body_buttons-16 {
+  grid-area: two;
+}
+
+.body_buttons-17 {
+  grid-area: three;
+}
+
+.body_buttons-18 {
+  grid-area: result;
+}
+
+.body_buttons-19 {
+  grid-area: zeroNum;
+}
+
+.body_buttons-20 {
+  grid-area: comma;
 }
