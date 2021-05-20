@@ -14,7 +14,7 @@
       class="body_buttons_number body_buttons-2"
     ></app-button>
     <app-button
-      (click)="changeOperationHandler('^')"
+      (click)="pow(display)"
       [symbol]="'x' + '&#178;'"
       class="body_buttons_number body_buttons-3"
     ></app-button>
@@ -89,6 +89,7 @@
       class="body_buttons_number body_buttons-17"
     ></app-button>
     <app-button
+      (click)="calculate()"
       [symbol]="'='"
       class="body_buttons_number body_buttons-18"
     ></app-button>
@@ -98,7 +99,7 @@
       class="body_buttons_number body_buttons-19"
     ></app-button>
     <app-button
-      [symbol]="','"
+      [symbol]="'.'"
       class="body_buttons_number body_buttons-20"
     ></app-button>
   </div>
