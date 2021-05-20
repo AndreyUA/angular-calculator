@@ -1,73 +1,90 @@
 <div class="body">
   <div class="body_display">
-    <app-display></app-display>
+    <app-display [num]="[display]"></app-display>
   </div>
   <div class="body_buttons">
     <app-button
+      (click)="deleteActualDisplayHandler()"
       [symbol]="'CE'"
       class="body_buttons_number body_buttons-1"
     ></app-button>
     <app-button
+      (click)="resetAllHandler()"
       [symbol]="'C'"
       class="body_buttons_number body_buttons-2"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('^')"
       [symbol]="'x' + '&#178;'"
       class="body_buttons_number body_buttons-3"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('&')"
       [symbol]="'&#8730;'"
       class="body_buttons_number body_buttons-4"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('/')"
       [symbol]="'&#247;'"
       class="body_buttons_number body_buttons-5"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('*')"
       [symbol]="'&#215;'"
       class="body_buttons_number body_buttons-6"
     ></app-button>
     <app-button
+      (click)="changeHandler('7')"
       [symbol]="7"
       class="body_buttons_number body_buttons-7"
     ></app-button>
     <app-button
       [symbol]="8"
+      (click)="changeHandler('8')"
       class="body_buttons_number body_buttons-8"
     ></app-button>
     <app-button
       [symbol]="9"
+      (click)="changeHandler('9')"
       class="body_buttons_number body_buttons-9"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('-')"
       [symbol]="'-'"
       class="body_buttons_number body_buttons-10"
     ></app-button>
     <app-button
+      (click)="changeHandler('4')"
       [symbol]="4"
       class="body_buttons_number body_buttons-11"
     ></app-button>
     <app-button
+      (click)="changeHandler('5')"
       [symbol]="5"
       class="body_buttons_number body_buttons-12"
     ></app-button>
     <app-button
+      (click)="changeHandler('6')"
       [symbol]="6"
       class="body_buttons_number body_buttons-13"
     ></app-button>
     <app-button
+      (click)="changeOperationHandler('+')"
       [symbol]="'+'"
       class="body_buttons_number body_buttons-14"
     ></app-button>
     <app-button
+      (click)="changeHandler('1')"
       [symbol]="1"
       class="body_buttons_number body_buttons-15"
     ></app-button>
     <app-button
+      (click)="changeHandler('2')"
       [symbol]="2"
       class="body_buttons_number body_buttons-16"
     ></app-button>
     <app-button
+      (click)="changeHandler('3')"
       [symbol]="3"
       class="body_buttons_number body_buttons-17"
     ></app-button>
@@ -76,6 +93,7 @@
       class="body_buttons_number body_buttons-18"
     ></app-button>
     <app-button
+      (click)="changeHandler('0')"
       [symbol]="0"
       class="body_buttons_number body_buttons-19"
     ></app-button>

@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'This is calculator based on';
-  angular = 'Angular 11';
 }
+
+// TODO: add logo pic from assets
