@@ -26,7 +26,11 @@ export class BodyComponent {
       this.isCalculated = false;
     }
 
-    if (+this.display === 0) {
+    //!this.display.indexOf('.')
+
+    if (num === '.') {
+      this.display += num.toString();
+    } else if (+this.display === 0 && this.display.length === 1) {
       this.display = num;
     } else {
       this.display += num.toString();
@@ -46,6 +50,11 @@ export class BodyComponent {
 
   calculate(): void {
     this.secondNum = this.display;
+
+    if (this.isCalculated) {
+      return;
+    }
+
     this.isCalculated = true;
 
     switch (this.operation) {
@@ -81,14 +90,13 @@ export class BodyComponent {
     this.display = Math.pow(+a, 2).toString();
     this.isCalculated = true;
   }
-  sqrt(a: string) {
-    this.display = Math.sqrt(+a).toString();
+  sqrt() {
+    this.display = Math.sqrt(+this.display).toString();
     this.isCalculated = true;
   }
 }
 
 /*
 не сделал
-& - квадратный корень Math.sqrt(num)
 ,
  */
